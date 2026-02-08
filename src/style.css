@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  /* background-color: black; */
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+  color: white;
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  margin: 0px auto;
+  width: 60%;
+  position: sticky;
+  /* background: #ffffff1a; */
+  backdrop-filter: blur(12px);
+  top: 0;
+  z-index: 10;
+}
+
+.nav-logo img {
+  height: 22px;
+}
+
+.nav-mid {
+  display: flex;
+  gap: 16px;
+}
+
+.nav-mid a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.cta-btn {
+  border: none;
+  padding: 6px 12px;
+  border-radius: 40px;
+  font-size: 16px;
+}
+
+.contact-sales {
+  background-color: #ffffff1a;
+  backdrop-filter: blur(12px);
+  color: white;
+}
+
+.start-free {
+  background-color: white;
+}
+
+main {
+  position: relative;
+  background-image: url("/public/bg-dark.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  margin-top: 40px;
+  gap: 54px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-top {
+  margin-top: 30px;
+
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 4px 8px;
+  background-color: #ffffff2a;
+  /* backdrop-filter: blur(12px); */
+  border-radius: 40px;
+}
+
+.hero-top span {
+  padding: 2px 8px;
+  font-size: 12px;
+  border-radius: 40px;
+  background-color: rgb(24, 139, 95);
+}
+
+.hero-mid {
+  text-align: center;
+}
+
+.hero-mid h2 {
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.hero-mid p {
+  margin-top: 30px;
+  font-size: 18px;
+  letter-spacing: 0.5 px;
+}
+
+.hero-bt {
+  position: relative;
+}
+
+.hero-bt input {
+  padding: 4px;
+  border-radius: 40px;
+  background-color: #ffffff2a;
+  backdrop-filter: blur(12px);
+  width: 360px;
+  height: 42px;
+  border: none;
+}
+
+.hero-bt input::placeholder {
+  padding: 15px;
+  color: aliceblue;
+}
+.hero-bt button {
+  position: absolute;
+  right: 5px;
+  top: 4.5px;
+  height: 32px;
+  padding: 4.5px 12px;
+  border-radius: 40px;
+  border: none;
+  background-color: white;
+}
+
+.hero-img img {
+  border-radius: 25px;
+  border: 2px solid #90ecc640;
+  border-bottom: none;
+}
