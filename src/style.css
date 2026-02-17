@@ -241,3 +241,37 @@ gap: 16px;
 #img-2{
   margin-top: 40px;
 }
+
+
+.card-big{
+
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(30, 27, 27);
+  margin-top: 24px;
+  padding: 30px;
+  border-radius: 16px;
+  width: 54%;
+}
+
+.card-big span {
+  color: #18e299;
+}
+
+.card-big h3 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.card-big p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffffb3;
+}
+
+.card-big img{
+  width: 100%;
+}
