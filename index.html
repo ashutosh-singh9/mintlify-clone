@@ -16,23 +16,26 @@
 <body>
 
 
-  <nav>
-    <div class="nav-logo">
-      <img src="./public/logo-full.webp" alt="Mintlify logo">
+  <header>
+    <div class="nav-body">
+      <nav>
+        <div class="nav-logo">
+          <img src="./public/logo-full.webp" alt="Mintlify logo">
+        </div>
+        <div class="nav-mid">
+          <a href="#">Resources</a>
+          <a href="#">Documentation</a>
+          <a href="#">Customers</a>
+          <a href="#">Blog</a>
+          <a href="#">Pricing</a>
+        </div>
+        <div class="nav-btns">
+          <button class="cta-btn contact-sales">Contact sales</button>
+          <button class="cta-btn start-free">Start for free</button>
+        </div>
+      </nav>
     </div>
-    <div class="nav-mid">
-      <a href="#">Resources</a>
-      <a href="#">Documentation</a>
-      <a href="#">Customers</a>
-      <a href="#">Blog</a>
-      <a href="#">Pricing</a>
-    </div>
-    <div class="nav-btns">
-      <button class="cta-btn contact-sales">Contact sales</button>
-      <button class="cta-btn start-free">Start for free</button>
-    </div>
-  </nav>
-  <main>
+
     <div class="hero">
       <div class="hero-top"><span>NEW</span>
         Self-updating docs with agent suggestions
@@ -47,7 +50,51 @@
         <button>Start now</button>
       </div>
       <div class="hero-img">
-        <img src="./public/hero-image-dark.svg" alt="">
+        <div class="image-hero"></div>
+        <!-- <img src="./public/hero-image-dark.svg" alt=""> -->
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="trusted-by">
+      <img src="/public/trusted-by.png" alt="trusted by images">
+    </div>
+
+    <div class="features">
+      <h2>Built for the intelligence age
+      </h2>
+      <p>Integrate AI into every part of your docs lifecycle. Woven into how your <br> knowledge is written, maintained,
+        and
+        understood by both users and LLMs.
+      </p>
+      <div class="feature-card-holder">
+        <div class="card">
+          <span>LLMS.TXT & MCP</span>
+          <h3>Built for both people and AI</h3>
+          <p>
+            Ensure your product shows up in the AI <br> workflows users already rely on. We support <br> llms.txt, MCP,
+            and
+            whatever comes next.
+          </p>
+          <img src="/public/card-1.png" alt="">
+
+        </div>
+        <div class="card">
+          <span>AGENT</span>
+          <h3>Self-updating knowledge management
+          </h3>
+          <p>
+            Draft, edit, and maintain content with a <br> context-aware agent. Move faster and more <br> consistently without the
+            documentation debt.
+
+
+          </p>
+          <img id="img-2" src="/public/card-2.png" alt="">
+
+        </div>
+
       </div>
     </div>
   </main>

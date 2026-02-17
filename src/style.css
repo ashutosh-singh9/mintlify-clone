@@ -13,6 +13,16 @@ body {
   color: white;
 }
 
+.nav-body {
+  align-items: center;
+  display: flex;
+  position: sticky;
+  /* background: #ffffff1a; */
+  backdrop-filter: blur(12px);
+  top: 0;
+  z-index: 10;
+  padding-bottom: 20px;
+}
 
 nav {
   display: flex;
@@ -21,11 +31,6 @@ nav {
   padding-top: 20px;
   margin: 0px auto;
   width: 60%;
-  position: sticky;
-  /* background: #ffffff1a; */
-  backdrop-filter: blur(12px);
-  top: 0;
-  z-index: 10;
 }
 
 .nav-logo img {
@@ -60,12 +65,12 @@ nav {
   background-color: white;
 }
 
-main {
+header {
   position: relative;
   background-image: url("/public/bg-dark.svg");
-  /* background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; */
+  background-size: cover;
+  background-position: bottom;
+  /* background-repeat: no-repeat; */
 }
 
 .hero {
@@ -141,8 +146,98 @@ main {
   background-color: white;
 }
 
-.hero-img img {
+.hero-img {
+  position: relative;
+  width: 100%;
+}
+.hero-img .image-hero {
+  /* height: 600px; */
+  height: 65vh;
+  margin: 0px auto;
+  width: 60%;
   border-radius: 25px;
   border: 2px solid #90ecc640;
   border-bottom: none;
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      /* top transparent */ rgba(0, 0, 0, 0.4) 100% /* bottom black */
+    ),
+    url(/public/hero-image-dark.svg);
+  background-size: cover;
+  background-position: center;
+}
+
+.trusted-by {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trusted-by img {
+  width: 55%;
+}
+
+.features {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: column;
+}
+
+.features h2 {
+  font-size: 40px;
+  margin-bottom: 14px;
+}
+
+.features > p {
+  text-align: center;
+  color: #ffffffb3;
+  font-size: 18px;
+}
+
+.feature-card-holder {
+  display: flex;
+  gap: 24px;
+  margin-top: 50px;
+  
+}
+
+.feature-card-holder .card{
+display: flex;
+flex-direction: column;
+align-items: start;
+border: 1px solid rgb(30, 27, 27);
+border-radius: 16px;
+padding: 30px;
+box-sizing: border-box;
+width: 500px;
+height: 540px;
+gap: 16px;
+}
+
+.feature-card-holder span {
+  color: #18e299;
+}
+
+.feature-card-holder h3 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.feature-card-holder p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffffb3;
+}
+
+.card img{
+  /* height: 450px; */
+  width: 350px;
+}
+
+#img-2{
+  margin-top: 40px;
 }
